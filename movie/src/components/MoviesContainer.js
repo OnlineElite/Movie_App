@@ -8,7 +8,7 @@ function MoviesContainer(props){
 
     useEffect(()=>{
         const APIKey = 'a117c37d'
-        const url = `http://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&s=${'hero'}`
+        const url = `https://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&s=${'hero'}`
         fetch(url)
         .then((res)=>{
             return res.json()

@@ -24,7 +24,7 @@ const loading =(value)=>{
 const moviesThunk = (value) => (dispatch)=>{
     dispatch(loading(true))
     const APIKey = 'a117c37d'
-    const url = `http://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&s=${value}`
+    const url = `https://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&s=${value}`
     fetch(url)
     .then((res)=>{
         return res.json()

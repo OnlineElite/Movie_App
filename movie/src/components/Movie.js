@@ -11,7 +11,7 @@ function Movie(props){
     
     function fetchDetails(){
         props.load(true)
-        fetch(`http://www.omdbapi.com/?apikey=a117c37d&i=${movie_id}`)
+        fetch(`https://www.omdbapi.com/?apikey=a117c37d&i=${movie_id}`)
         .then((res)=>{
             return res.json()
         })
